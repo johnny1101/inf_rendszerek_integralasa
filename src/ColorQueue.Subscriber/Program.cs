@@ -40,7 +40,7 @@ namespace ColorQueueSubscriber
 
             Console.WriteLine("Start colorQueue listening.");
 
-            Console.ReadKey();
+            while (true) { }
         }
     }
 }

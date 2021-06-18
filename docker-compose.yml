@@ -1,6 +1,38 @@
 version: '3.4'
 
 services:
+  #colorstatistic_subscriber:     
+  #  build: 
+  #    context: .
+  #    dockerfile: src/ColorStatistic.Subscriber/Dockerfile
+  #  restart: always
+  #  depends_on:
+  #  - rabbitmq 
+  #  networks: 
+  #    default:
+  #      ipv4_address: 172.10.0.5 
+
+  #colorqueue_subsciber:    
+  #  build: 
+  #    context: .
+  #    dockerfile: src/ColorQueue.Subscriber/Dockerfile
+  #  restart: always
+  #  depends_on:
+  #  - "rabbitmq"
+  #  networks: 
+  #    default:
+  #      ipv4_address: 172.10.0.4 
+
+  colorqueue_producer:
+    build:
+      context: .
+      dockerfile: src/ColorQueue.Producer/Dockerfile
+    restart: always
+    depends_on:
+    - "rabbitmq"     
+    networks: 
+      default:
+        ipv4_address: 172.10.0.3   
 
   rabbitmq: # login guest:guest
     image: rabbitmq:3-management
@@ -14,26 +46,16 @@ services:
     - "25672:25672"
     - "15671:15671"
     - "15672:15672"
-    #networks: 
-    #  - "rabbit-example"
-
-  #worker:
-  #   build: ./Worker
-  #   restart: always
-  #   depends_on:
-  #   - "listener"     
-  #   networks: 
-  #    - "rabbit-example"
-
-  #color_statistic:
-  #  build: ./ColorStatistic
-  #  restart: always
-  #  depends_on:
-  #  - "worker"
-  #  networks: 
-  #    - "rabbit-example"
-    
+    networks: 
+      default:
+        ipv4_address: 172.10.0.2  
+        aliases:
+          - rabbitmq
 
 networks:
-    rabbit-example: {}
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.10.0.0/24
     

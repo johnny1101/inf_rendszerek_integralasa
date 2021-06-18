@@ -5,16 +5,16 @@ VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D3EA9B6-9D32-4284-8DD5-846265876033}"
 	ProjectSection(SolutionItems) = preProject
-		docker-compose.yml = docker-compose.yml
+		..\docker-compose.yml = ..\docker-compose.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Color.MessagesLib", "Color.MessagesLib\Color.MessagesLib.csproj", "{9242F358-7D76-4E38-8FC2-4DA67837BF16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Color.MessagesLib", "Color.MessagesLib\Color.MessagesLib.csproj", "{9242F358-7D76-4E38-8FC2-4DA67837BF16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorStatistic.Subscriber", "ColorStatistic.Subscriber\ColorStatistic.Subscriber.csproj", "{E627F9C7-9CCE-4DE8-B788-5DC494948FBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorStatistic.Subscriber", "ColorStatistic.Subscriber\ColorStatistic.Subscriber.csproj", "{E627F9C7-9CCE-4DE8-B788-5DC494948FBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorQueue.Subscriber", "ColorQueueSubscriber\ColorQueue.Subscriber.csproj", "{01D4C3D9-ED1A-462C-BA72-DBD941F7D6B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorQueue.Subscriber", "ColorQueue.Subscriber\ColorQueue.Subscriber.csproj", "{493B6FAC-633D-49CE-9BAF-12E72DBD69FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorQueue.Producer", "ColorQueueProducer\ColorQueue.Producer.csproj", "{AD5EF534-CE54-4E81-9332-3DC3FB448358}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorQueue.Producer", "ColorQueue.Producer\ColorQueue.Producer.csproj", "{D91D200E-10FD-42DE-81C8-31C7AADAEC42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,14 +30,14 @@ Global
 		{E627F9C7-9CCE-4DE8-B788-5DC494948FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E627F9C7-9CCE-4DE8-B788-5DC494948FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E627F9C7-9CCE-4DE8-B788-5DC494948FBD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{01D4C3D9-ED1A-462C-BA72-DBD941F7D6B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01D4C3D9-ED1A-462C-BA72-DBD941F7D6B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01D4C3D9-ED1A-462C-BA72-DBD941F7D6B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01D4C3D9-ED1A-462C-BA72-DBD941F7D6B4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD5EF534-CE54-4E81-9332-3DC3FB448358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD5EF534-CE54-4E81-9332-3DC3FB448358}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD5EF534-CE54-4E81-9332-3DC3FB448358}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD5EF534-CE54-4E81-9332-3DC3FB448358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{493B6FAC-633D-49CE-9BAF-12E72DBD69FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{493B6FAC-633D-49CE-9BAF-12E72DBD69FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{493B6FAC-633D-49CE-9BAF-12E72DBD69FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{493B6FAC-633D-49CE-9BAF-12E72DBD69FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91D200E-10FD-42DE-81C8-31C7AADAEC42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91D200E-10FD-42DE-81C8-31C7AADAEC42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91D200E-10FD-42DE-81C8-31C7AADAEC42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91D200E-10FD-42DE-81C8-31C7AADAEC42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -18,7 +18,7 @@ namespace ColorStatistic.Subscriber
                 Console.WriteLine($"10 {message} messages has been processed.");
             });
 
-            Console.ReadKey();
+            while (true) { }
         }
     }
 }

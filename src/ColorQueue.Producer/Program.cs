@@ -19,9 +19,9 @@ namespace ColorQueueProducer
         {
             var colourMessages = new string[] { MessageTypes.MessageRed, MessageTypes.MessageBlue, MessageTypes.MessageGreen };
             var messageService = new MessageService(
-                new MessageServiceConfiguration
+                new MessageServiceConfiguration                
                 {
-                    Hostname = "localhost",
+                    Hostname = "rabbitmq",
                     Port = AmqpTcpEndpoint.UseDefaultPort,
                     UserName = ConnectionFactory.DefaultUser,
                     Password = ConnectionFactory.DefaultPass,
