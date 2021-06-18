@@ -1,0 +1,39 @@
+version: '3.4'
+
+services:
+
+  rabbitmq: # login guest:guest
+    image: rabbitmq:3-management
+    hostname: "rabbitmq"
+    labels:
+      NAME: "rabbitmq"
+    ports:
+    - "4369:4369"
+    - "5671:5671"
+    - "5672:5672"
+    - "25672:25672"
+    - "15671:15671"
+    - "15672:15672"
+    #networks: 
+    #  - "rabbit-example"
+
+  #worker:
+  #   build: ./Worker
+  #   restart: always
+  #   depends_on:
+  #   - "listener"     
+  #   networks: 
+  #    - "rabbit-example"
+
+  #color_statistic:
+  #  build: ./ColorStatistic
+  #  restart: always
+  #  depends_on:
+  #  - "worker"
+  #  networks: 
+  #    - "rabbit-example"
+    
+
+networks:
+    rabbit-example: {}
+    
